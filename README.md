@@ -8,7 +8,7 @@ Works with accounts-google to automatically handle refresh/access token changes 
 # Install
 
 ```
-meteor add percolate:google-api
+meteor add danopia:google-api
 ```
 
 # Usage
@@ -20,6 +20,8 @@ GoogleApi.get('/your/api/path', options[, callback]);
 ```
 
 If `callback` is provided (client or server), the call will be made **asynchronously**.
+
+Override the endpoint hostname by passing a `host` in the options object.
 
 Available methods: `GoogleApi.get`, `GoogleApi.post`, `GoogleApi.patch`, `GoogleApi.put`, `GoogleApi.delete`
 
