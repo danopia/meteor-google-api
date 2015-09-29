@@ -3,10 +3,9 @@ Meteor.methods({
   exchangeRefreshToken: function(userId) {
     this.unblock();
 
-    check(userId, String);
-
     var user;
     if (userId && Meteor.isServer) {
+      check(userId, String);
       user = Meteor.users.findOne({_id: userId});
     } else {
       user = Meteor.user();

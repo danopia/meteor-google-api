@@ -1,7 +1,7 @@
 Package.describe({
   name: 'danopia:google-api',
   summary: "A Meteor library to interact with Google's API",
-  version: '1.0.3',
+  version: '1.0.4',
   git: 'https://github.com/danopia/meteor-google-api'
 });
 
