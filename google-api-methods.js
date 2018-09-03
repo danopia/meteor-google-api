@@ -30,7 +30,7 @@ Meteor.methods({
           }
       });
     } catch (e) {
-      console.warn('Failed to exchanged Google refresh token.', e);
+      console.warn('Failed to exchange Google refresh token.', e);
       var code = e.response ? e.response.statusCode : 500;
       throw new Meteor.Error(code, 'Unable to exchange Google refresh token.', e.response);
     }
