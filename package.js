@@ -1,7 +1,7 @@
 Package.describe({
   name: 'danopia:google-api',
   summary: "A Meteor library to interact with Google's API",
-  version: '1.1.0',
+  version: '1.1.1',
   git: 'https://github.com/danopia/meteor-google-api'
 });
 
@@ -20,7 +20,13 @@ Package.on_use(function (api, where) {
 });
 
 Package.on_test(function (api) {
-  api.use(['danopia:google-api', 'tinytest', 'http', 'accounts-base', 'service-configuration']);
+  api.use([
+    'danopia:google-api',
+    'tinytest',
+    'http',
+    'accounts-base',
+    'service-configuration',
+    'underscore']);
 
   api.add_files('google-api-tests.js', ['client', 'server']);
 });
